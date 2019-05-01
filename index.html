@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Comfy-House</title>
+    <!--FONT AWESOME-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!--CUSTOM CSS -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+   <!------------- NAVBAR ----------------------->
+   <nav class="navbar">
+       <div class="navbarCenter">
+           <span class="navIcon">
+               <i class="fas fa-bars"></i>
+           </span>
+            <h1>Comfy <span class="text">House</span></h1>
+           <div class="cartBtn">
+               <span class="navIcon">
+                   <i class="fas fa-cart-plus"></i>
+               </span>
+               <div class="cartItems">0</div>
+           </div>
+       </div>
+   </nav>
+   <!------------- END OF NAVBAR ----------------------->
+   <!------------- HERO ----------------------->
+   <header class="hero">
+       <div class="banner">
+           <h1 class="bannerTitle">furniture collection</h1>
+           <button class="bannerBtn">shop now</button>
+       </div>
+   </header>
+   <!-------------END OF HERO ----------------------->
+
+   <!------------- PRODUCTS ----------------------->
+   <section class="products">
+       <div class="sectionTitle">
+           <h2>Our products</h2>
+       </div>
+       <div class="productsCenter">
+        <!-- SINGLE PRODUCT-->
+        <article class="product">
+            <div class="imgContainer">
+                <img src="./images/product-1.jpeg" alt="product" class="productImg">
+                <button class="bagBtn" data-id="1">
+                    <i class="fas fa-shopping-cart"></i>
+                    add to cart
+                </button>
+            </div>
+            <h3>queen bed</h3>
+            <h5>£10.99</h5>
+        </article>
+        <!-- END OF SINGLE PRODUCT-->
+       </div>
+   </section>
+   <!------------- END OF PRODUCTS ----------------------->
+
+   <!------------- CART ----------------------->
+   <div class="cartOverlay">
+       <div class="cart">
+           <span class="closeCart">
+               <i class="fas fa-window-close"></i>
+           </span>
+           <h2>your cart</h2>
+           <div class="cartContent">
+               <!--CART ITEM-->
+               <div class="cartItem">
+                   <img src="./images/product-1.jpeg" alt="product">
+                    <div>
+                        <h4>queen bed</h4>
+                        <h5>£400</h5>
+                        <span class="removeItem">remove</span>
+                    </div>
+                    <div>
+                        <i class="fas fa-chevron-up"></i>
+                         <p class="itemAmount">12</p>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+               </div>
+               <!--END OFCART ITEM-->
+           </div>
+           <div class="cartFooter">
+               <h3> your total :£ <span cartTotal>400</span></h3>
+               <button class="clearCart bannerBtn">clear cart</button>
+           </div>
+       </div>
+   </div>
+   <!------------- END OF CART ----------------------->
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    <script src="./app.js"></script>
+</body>
+</html>
